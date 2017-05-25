@@ -8,9 +8,9 @@
 </head>
 <body>
 	 <form action="QRCodeServlet" method="get">  
-            <p>Enter Text to create QR Code</p>  
+            <p>输入要生产二维码的内容</p>  
             <input type="text" name="qrtext" />  
-            <input type="submit" value="Generate QR Code" />  
+            <input type="submit" value="生产二维码" />  
         </form>  
 </body>
 </html>

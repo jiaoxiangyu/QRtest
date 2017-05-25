@@ -36,6 +36,13 @@ public class QRCodeServlet extends HttpServlet {
         response.setContentType("image/png");  
         response.setContentLength(out.size());  
            
+        FileOutputStream fout = new FileOutputStream(new File("E:\\logs\\QR_Code.JPG"));
+
+		fout.write(out.toByteArray());
+
+		fout.flush();
+		fout.close();
+        
         OutputStream outStream = response.getOutputStream();  
    
         outStream.write(out.toByteArray());  
